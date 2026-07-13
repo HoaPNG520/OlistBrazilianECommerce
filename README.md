@@ -170,13 +170,3 @@ jupyter notebook
 # 5. launch dashboard (after running all notebooks)
 python app.py
 ```
-
----
-
-## CV Bullets
-
-- Built end-to-end analytics pipeline on Olist dataset (99,992 orders, 9 source tables) — raw CSV ingestion to three production-ready ML models using pandas, XGBoost, and Prophet
-- **XGBoost churn classifier** with SMOTE (129:1 class imbalance), AUC-ROC 0.62 on severely imbalanced test set (0.8% positive rate); 5-fold CV AUC 0.998 on balanced data; SHAP identified payment installments and review score as top churn drivers
-- **Prophet demand forecasting** for top 5 categories with Brazilian holiday regressors; best MAPE 52.5% vs 73.2% rolling average baseline (+20.7%) on 60-day holdout
-- **RFM K-Means segmentation** (k=5, silhouette 0.334) into 5 cohorts; At Risk segment (525 customers) identified as priority retention target with 0% actual churn rate vs 95%+ for other segments
-- **4-section Plotly EDA** across 99k orders: 1-star review rate spikes from 6.5% (on-time) to 70.4% (8–14 days late); São Paulo = 42% of GMV; bottom 5% of sellers generate 4.2% of all 1-star reviews; Black Friday 2017 = 7.3× average daily volume
